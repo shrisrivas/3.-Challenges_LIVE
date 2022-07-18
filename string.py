@@ -1,0 +1,136 @@
+import logging
+logging.basicConfig(filename="test2.log" ,level = logging.INFO)
+logging.info("this is code for logging ")
+
+class String:
+    """String operation task implementation using oops and parameterisation object call during function call """
+    def extract_data(self, s):
+        """1 . Try to extract data from index one to index 300 with a jump of 3"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1 = s[1:300:3]
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def reverse(self,s):
+        """ Try to reverse a string without using reverse function"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s[::-1]
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def split_upper(self,s):
+        """Try to split a string after conversion of entire string in uppercase"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1 = s.upper()
+            s2=s1.split()
+            logging.info("The output of the operation is %s", s2)
+        except Exception as e:
+            print(e)
+
+    def lower(self,s):
+        """try to convert the whole string into lower case"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1= s.lower()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def capitalize(self,s):
+        """Try to capitalize the whole string"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.capitalize()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def isalnum(self,s):
+        """Write a diference between isalnum() and isalpha()"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.isalnum()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def isalpha(self,s):
+        """Write a diference between isalnum() and isalpha()"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.isalpha()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def expandtabs(self,s):
+        """Try to give an example of expand tab"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.expandtabs()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def strip(self,s):
+        """Give an example of strip , lstrip and rstrip"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.strip()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def rstrip(self,s):
+        """Give an example of strip , lstrip and rstrip"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.rstrip()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def lstrip(self,s):
+        """Give an example of strip , lstrip and rstrip"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.lstrip()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def replace(self,s):
+        """Replace a string charecter by another charector by taking your own example "sudhanshu"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            s1=s.replace()
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+    def center(self,s):
+        """Try  to give a defination of string center function with and exmple"""
+        try:
+            logging.info('The given string for this operation is %s', s)
+            numbers=input("enter the numbers of character")
+            character=input("enter the value of character")
+            s1=s.center(numbers,character)
+            logging.info("The output of the operation is %s", s1)
+        except Exception as e:
+            print(e)
+
+p1=String()
+print(p1.extract_data("hi i am the best"))
+p1.capitalize("hi i am the best")
+p1.lower("hi i am the best")
+p1.reverse("hi i am the best")
+p1.split_upper("hi i am the best")
+p1.isalnum("as23")
+p1.isalpha("nkjkn23")
+p1.expandtabs("nm\tmk")
+print(p1.extract_data(76897))
